@@ -1,0 +1,83 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    // Ruff Configuration
+    "ruff.enable": true,
+    "ruff.fixAll": true,
+    "ruff.showSyntaxErrors": true,
+    "ruff.codeAction.fixViolation": {
+        "enable": true
+    },
+    "ruff.codeAction.disableRuleComment": {
+        "enable": true
+    },
+    // Python General Settings
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportWildcardImport": "none"
+    },
+    // Editor Settings for Python
+    "editor.rulers": [
+        79
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // 🔥 IMPORTANTE: ajustado aqui (merge correto)
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "never"
+    },
+    // Problem Matcher Settings
+    "problems.decorations.enabled": true,
+    "problems.showCurrentInStatus": true,
+    // Auto-save and format settings
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    // GitHub Copilot Settings
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true,
+        "python": true
+    },
+    "github.copilot.advanced": {
+        "length": 1000,
+        "temperature": 0.1
+    },
+    // Files to include in indexing
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/__pycache__/**": false,
+        "**/.pytest_cache/**": true,
+        "**/.ruff_cache/**": true
+    },
+    // Search settings to include more files
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": false,
+        "**/.pytest_cache": true
+    },
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
